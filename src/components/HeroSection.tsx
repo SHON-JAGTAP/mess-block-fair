@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Users } from "lucide-react";
-import heroImage from "@/assets/blockchain-mess-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -61,12 +60,11 @@ const HeroSection = () => {
           
           {/* Right image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-card">
-              <img 
-                src={heroImage} 
-                alt="Blockchain mess payment system"
-                className="w-full h-auto object-cover"
-              />
+            <div className="relative rounded-2xl overflow-hidden shadow-card bg-gradient-card p-8 min-h-[400px] flex items-center justify-center">
+              <div className="text-center text-muted-foreground">
+                <Shield className="h-16 w-16 mx-auto mb-4 text-primary" />
+                <p className="text-lg">Blockchain Visualization</p>
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
             </div>
             

@@ -5,12 +5,12 @@ import Features from "@/components/Features";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
       <Dashboard />
       <Features />
-    </div>
+    </main>
   );
 };
 
